@@ -8,7 +8,8 @@ LOCAL_CPPFLAGS := \
   $(LOCAL_CPPFLAGS) \
   -Wall \
   -Wno-unused-parameter \
-  -Werror
+  -Werror \
+  -Wno-error=strict-aliasing
 
 ifeq ($(MCLD_ENABLE_ASSERTION),true)
   LOCAL_CPPFLAGS += \
